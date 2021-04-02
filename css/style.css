@@ -118,25 +118,13 @@ span {
 .site-nav-list .link:hover,
 .site-nav-list .link:focus {
   color: var(--accent-color);
-  border-bottom: 2px solid var(--accent-color);
 }
 
-.contacts::before {
-  content: "";
-  display: block;
+.contacts {
+  display: flex;
   margin-left: auto;
-  width: 16px;
-  height: 12px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-.contacts-icon-mail::before {
-  background-image: url("../images/icons.svg/mail.svg.svg");
-}
-.contacts-icon-phone::before {
-  background-image: url("../images/icons.svg/phone.svg");
-}
+
 .contacts li + li {
   margin-left: 50px;
 }
