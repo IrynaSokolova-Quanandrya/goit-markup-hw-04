@@ -350,6 +350,7 @@ span {
 
 .networks-icon {
   fill: var(--icons);
+  margin: 12px;
 }
 .networks-icon:hover,
 .networks-icon:focus {
@@ -374,18 +375,25 @@ span {
 }
 .customers-link:hover,
 .customers-link:focus {
-  background-color: var(--accent-color);
+  outline: 1px solid var(--accent-color);
 }
 .customers-icon {
-  background-position: center;
   fill: var(--icons);
-  outline: 1px solid teal;
+  margin: 16px 32px;
 }
+
 .customers-icon:hover,
 .customers-icon:focus {
-  fill: var(--background-color);
+  fill: var(--accent-color);
 }
 /*Footer*/
+.footer {
+  width: 1600px;
+  height: 252px;
+}
+.footer-items {
+  display: flex;
+}
 .footer,
 .footer-address {
   color: #ffffff;
@@ -399,9 +407,11 @@ span {
   letter-spacing: 0.03em;
 }
 .footer-address {
+  margin-bottom: 9px;
   padding-bottom: 0;
 }
 .footer-logo {
+  margin-bottom: 20px;
   color: #ffffff;
 
   font-family: Raleway;
@@ -412,6 +422,7 @@ span {
   letter-spacing: 0.03em;
 }
 .footer-contacts-list-link {
+  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-contacts-list-link:hover,
