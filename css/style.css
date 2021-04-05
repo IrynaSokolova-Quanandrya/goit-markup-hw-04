@@ -195,7 +195,7 @@ span {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -332,6 +332,9 @@ span {
   justify-content: center;
   width: 206px;
 }
+.networks:nth-child(4) {
+  margin-right: 0;
+}
 
 .networks {
   width: 44px;
@@ -342,10 +345,6 @@ span {
 .networks:hover,
 .networks:focus {
   background-color: var(--accent-color);
-}
-
-.networks:last-child {
-  margin: 0;
 }
 
 .networks-icon {
@@ -389,10 +388,13 @@ span {
 /*Footer*/
 .footer {
   width: 1600px;
-  height: 252px;
 }
 .footer-items {
   display: flex;
+}
+.footer-contacts {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .footer,
 .footer-address {
@@ -406,20 +408,19 @@ span {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.footer-address {
-  margin-bottom: 9px;
-  padding-bottom: 0;
+.footer-contacts {
+  margin-right: 70px;
 }
-.footer-logo {
+.logo {
+  display: block;
   margin-bottom: 20px;
   color: #ffffff;
+}
 
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+.footer-address {
+  align-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 .footer-contacts-list-link {
   margin-bottom: 9px;
@@ -429,12 +430,24 @@ span {
 .footer-contacts-list-link:focus {
   color: var(--accent-color);
 }
+/*Присоединяйтесь*/
 .join {
-  display: flex;
-  margin-left: 70px;
+  margin-top: 72px;
+  margin-bottom: 100px;
   width: 206px;
-  height: 80px;
   outline: 1px solid red;
+}
+.join .join-networks {
+  box-sizing: border-box;
+  font-style: bold;
+}
+
+.join .networks {
+  background-color: #44454e;
+}
+.join .networks:hover,
+.join .networks:focus {
+  background-color: var(--accent-color);
 }
 /*PORTFOLIO*/
 
@@ -453,7 +466,6 @@ span {
   border-radius: 4px;
   padding: 6px 32px;
   color: var(--title-text-color);
-  font-family: inherit;
   cursor: pointer;
   font-weight: 500;
   line-height: 1.6;
@@ -466,6 +478,7 @@ span {
 .filter-button:focus {
   color: var(--background-color);
   background-color: var(--accent-color);
+  box-shadow: 0 4px 4px 0 var(--primary-text-color);
 }
 
 /*примеры работ*/
@@ -491,6 +504,10 @@ span {
 }
 .examples-link > a {
   display: block;
+}
+.examples-link:focus,
+.examples-link:hover {
+  box-shadow: 0 4px 4px 0 var(--primary-text-color);
 }
 .card {
   border-top-left-radius: 5px;
