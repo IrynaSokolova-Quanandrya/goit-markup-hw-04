@@ -152,6 +152,10 @@ span {
   fill: var(--icons);
   margin-right: 10px;
 }
+.contacts-icon:focus,
+.customers-icon:hover {
+  fill: var(--accent-color);
+}
 /*блок герой*/
 
 .hero {
