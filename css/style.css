@@ -129,7 +129,13 @@ span {
 .contacts li + li {
   margin-left: 50px;
 }
-.contacts a {
+.mail,
+.tel {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-item .link {
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -137,11 +143,15 @@ span {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contacts a:focus,
-.contacts a:hover {
+.contacts-item .link:focus,
+.contacts-item .link:hover {
   color: var(--accent-color);
 }
 
+.contacts-icon {
+  fill: var(--icons);
+  margin-right: 10px;
+}
 /*блок герой*/
 
 .hero {
@@ -411,7 +421,7 @@ span {
 .footer-contacts {
   margin-right: 70px;
 }
-.logo {
+.footer .logo {
   display: block;
   margin-bottom: 20px;
   color: #ffffff;
