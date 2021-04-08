@@ -510,6 +510,10 @@ span {
   display: block;
 }
 
+.examples-link:hover,
+.examples-link:focus {
+  box-shadow: 0 4px 4px 0 var(--primary-text-color);
+}
 .card {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
